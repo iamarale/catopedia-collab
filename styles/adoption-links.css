@@ -1,0 +1,117 @@
+:root{
+    --white: #FAF9F5;
+    --black: #201E1F;
+    --saturated-yellow: #D2AB5E;
+    --light-yellow: #E0CEA8;
+    --blue:  #C9D0D5;
+    --blue-text: #9CB1BD;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+/* utilities */
+.btn-blue{
+    background: var(--blue-text);
+    color: var(--white);
+}
+.btn-blue:hover{
+    background: var(--blue);
+    color: var(--black);
+}
+/* Nav */
+header{
+    background: var(--white);
+}
+header a{
+    max-width: 250px;
+}
+.navbar-toggler{
+    border: 0;
+}
+/* landing */
+#landing-hero{
+    background: 
+    linear-gradient( #fff,#AFBFC8);
+}
+#landing-hero h1{
+    color: var(--saturated-yellow);
+}
+#landing-hero p{
+    padding-right: 20rem;
+    line-height: 2;
+    font-size: 1.25rem;
+}
+.btn-pos{
+    position: absolute;
+    bottom:0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.fa-arrow-down{
+    color: var(--saturated-yellow);
+    font-size: 3rem;
+    margin: 10rem 0;
+}
+/* adoption page */
+#adoption{
+    background: #AFBFC8;
+}
+.card{
+    background: var(--light-yellow);
+    height: 100%;
+}
+.card-body a{
+    display: block;
+    height: 100%;
+}
+/* footer */
+footer{
+    background: var(--saturated-yellow);
+}
+.fab{
+    font-size: 4rem;
+}
+
+
+
+.arrow-animation { 
+    animation: bounce 2s 4;
+    display: block;
+ }
+ 
+ @keyframes bounce { 
+    0% {transform: translateY(20);} 
+    40% {transform: translateY(200);} 
+    60% {transform: translateY(0px);} 
+    80% {transform: translateY(-50px);} 
+    90% {transform: translateY(-30);} 
+    100% {transform:translateY(0)}
+ }
+ 
+/* media queries */
+@media screen and (min-width: 768px) and (max-width: 992px){
+  
+    footer{
+        margin-top: auto;
+    }
+    #landing-hero p {
+        font-size: 1.3rem;
+        padding-right: 10rem;
+    }
+}
+@media (max-width: 767px){
+    #landing-hero h1{
+        text-align: center;
+    }
+    #landing-hero p {
+        font-size: 1.3rem;
+        padding: 0;
+        text-align: center;
+    }
+    
+}

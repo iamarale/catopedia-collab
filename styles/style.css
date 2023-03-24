@@ -1,0 +1,52 @@
+:root{
+    --white: #FAF9F5;
+    --black: #201E1F;
+    --saturated-yellow: #D2AB5E;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+/* Nav */
+header{
+    background: var(--white);
+}
+header a{
+    max-width: 250px;
+}
+.navbar-toggler{
+    border: 0;
+}
+/* landing */
+.btn-pos{
+    position: absolute;
+    bottom:0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* footer */
+footer{
+    background: var(--saturated-yellow);
+}
+.fab{
+    font-size: 4rem;
+}
+
+/* media queries */
+@media screen and (min-width: 768px) and (max-width: 992px){
+  
+    footer{
+        margin-top: auto;
+    }
+}
+
+
+
+
+

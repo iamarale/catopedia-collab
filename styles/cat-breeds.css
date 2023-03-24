@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --white: #FAF9F5;
+    --black: #201E1F;
+    --saturated-yellow: #D2AB5E;
+    --blue:  #C9D0D5;
+    --blue-text: #9CB1BD;
+}
+body{
+    overflow-x: hidden;
+}
+/* Utilities */
+.bg-blue{
+    background: var(--blue);
+}
+.bg-blue:hover{
+    opacity: .8;
+}
+/* Nav */
+header{
+    background: var(--white);
+    padding: 0;
+    margin: 0;
+}
+header a{
+    max-width: 250px;
+}
+
+/* landing page */
+#landing{
+    background-image: url("../assets/adoption-landing.jpg");
+    background-color: #cccccc !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+}
+#landing .wrapper{
+    height: 100%;
+    width:100%;
+    margin-left: 5rem;
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.primary-heading{
+    font-weight: 700;
+    color: var(--blue);
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+.wrapper p{
+    max-width: 600px;
+    color: var(--white);
+    font-weight: normal;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+.input-group {
+    background: var(--blue);
+    border: none;
+    outline: none;
+}
+.input-group i{
+    color: var(--white);
+}
+.input-group button{
+    border-radius: 20px;
+
+}
+.wrapper .btn-search{
+    border-radius: 10px;
+    border: 0;
+    padding: .375rem .75rem;
+    border-right: 7px solid white;
+    background: var(--blue)
+}
+.wrapper input{
+    background: var(--blue);
+    padding: 1rem 2rem;
+
+}
+input::placeholder, input{
+    font-size: 1.5rem;
+}
+
+/* Cat Breeds Section */
+#cat-breeds .primary-heading{
+    text-shadow: 5px 5px 10px;
+    text-align: center;
+    margin: 5rem 2rem;
+}
+.h2-bar{
+    background: rgba(51, 51, 51,.5);
+    font-size: 2rem;
+}
+.cat-breed-h2{
+    font-size: 2rem;
+}
+.txt-blue{
+    color: var(--blue-text);
+}
+.txt-white:hover {
+    background:var(--blue-text);
+    color: var(--blue)
+}
+
+/* footer */
+footer{
+    background: var(--saturated-yellow);
+}
+.fab{
+    font-size: 4rem;
+}
+
+/* media Queries */
+
+
+@media only screen and (max-width: 650px)  {
+    .input-group{
+        width: 340px;
+    }
+    .primary-heading{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    #landing .wrapper{
+        margin:0;
+        padding: 0 1rem;
+        text-align: center;
+        font-weight: bold;
+    }
+    .wrapper p{
+        font-size: 1rem;
+    }
+}
+@media screen and (min-width:651px) and (max-width:991px) {
+    .input-group{
+        width: 500px;
+    }
+}
+
+@media only screen and (min-width: 992px)  {
+    .input-group{
+        width: 600px;
+    }
+    .information-bar{
+        display: flex !important;
+    }
+    .primary-heading{
+        font-size: 5rem;
+    }
+    .wrapper p{
+        font-size: 1.5rem;
+        padding: 0;
+    }
+}
